@@ -1,0 +1,5 @@
+{
+    "name": "FamilyDash Integration",
+    "homeassistant": "2025.9.3",
+    "hacs": "2.0.5"
+}

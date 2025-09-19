@@ -1,0 +1,10 @@
+{
+    "domain": "familydash",
+    "name": "FamilyDash",
+    "version": "0.0.1",
+    "integration_type": "device",
+    "documentation": "https://github.com/coopeeo/familydash-ha",
+    "issues": "https://github.com/coopeeo/familydash-ha/issues",
+    "codeowners": ["@coopeeo"],
+    "zeroconf": ["_familydash._tcp.local."]
+}
