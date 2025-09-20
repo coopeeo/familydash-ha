@@ -927,6 +927,7 @@ dependencies = [
     { name = "homeassistant", version = "2025.4.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.13.2'" },
     { name = "homeassistant", version = "2025.9.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.13.2'" },
     { name = "ruff" },
+    { name = "voluptuous" },
 ]
 
 [package.dev-dependencies]
@@ -940,6 +941,7 @@ requires-dist = [
     { name = "colorlog", specifier = ">=6.9.0" },
     { name = "homeassistant", specifier = ">=2025.4.4" },
     { name = "ruff", specifier = ">=0.13.1" },
+    { name = "voluptuous", specifier = ">=0.15.2" },
 ]
 
 [package.metadata.requires-dev]

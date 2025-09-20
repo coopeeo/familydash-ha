@@ -6,5 +6,6 @@
   "documentation": "https://github.com/coopeeo/familydash-ha",
   "issue_tracker": "https://github.com/coopeeo/familydash-ha/issues",
   "codeowners": ["@coopeeo"],
-  "zeroconf": ["_familydash._tcp.local."]
+  "zeroconf": ["_familydash._tcp.local."],
+  "config_flow": true
 }
