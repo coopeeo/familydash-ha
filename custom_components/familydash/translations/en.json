@@ -1,0 +1,12 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to FamilyDash",
+        "description": "To connect, please tap the connect button on your FamilyDash screen."
+      }
+    },
+    "error": {},
+    "abort": {}
+  }
+}
