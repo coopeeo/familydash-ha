@@ -14,7 +14,7 @@ class FamilyDashConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         self, user_input: dict[str, Any] | None = None
     ) -> config_entries.ConfigFlowResult:
         if user_input is not None:
-            return self.async_step_link(user_input)
+            return await self.async_step_link(user_input)
 
         return self.async_show_form(
             step_id="user",
