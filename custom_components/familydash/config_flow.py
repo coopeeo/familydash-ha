@@ -1,4 +1,3 @@
-from mimetypes import init
 import voluptuous as vol
 
 from homeassistant import config_entries
