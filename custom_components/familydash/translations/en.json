@@ -3,7 +3,11 @@
     "step": {
       "user": {
         "title": "Connect to FamilyDash",
-        "description": "To connect, please tap the connect button on your FamilyDash screen."
+        "description": "Enter in the IP Address for the device."
+      },
+      "link": {
+        "title": "Link FamilyDash",
+        "description": "Tap the Home Assistant button on the screen to register FamilyDash with Home Assistant."
       }
     },
     "error": {},
