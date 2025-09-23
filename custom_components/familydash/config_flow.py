@@ -4,6 +4,8 @@ from homeassistant import config_entries
 
 from .const import DOMAIN
 
+from .const import FAMILYDASH_PORT  # noqa: F401
+
 
 class FamilyDashConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """FamilyDash config flow."""
@@ -32,5 +34,7 @@ class FamilyDashConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     ) -> config_entries.ConfigFlowResult:
         if user_input is not None:
             return self.async_show_form(step_id="link")
+
+        # do integration and call api
 
         return self.async_show_progress(step_id="link", progress_action="Loading")

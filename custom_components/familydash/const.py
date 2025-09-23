@@ -1,1 +1,2 @@
 DOMAIN = "familydash"
+FAMILYDASH_PORT = "8059"
