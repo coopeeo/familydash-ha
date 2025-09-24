@@ -16,17 +16,18 @@ class FamilyDashConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         self,
         user_input: dict[str, any] | None = None,  # type: ignore  # noqa: PGH003
     ) -> config_entries.ConfigFlowResult:
-        if user_input is not None:
-            return await self.async_step_link(user_input)
+        if user_input is None:
+            return self.async_show_form(
+                step_id="user",
+                data_schema=vol.Schema(
+                    {
+                        vol.Required("IP Address"): str,
+                    }
+                ),
+            )
 
-        return self.async_show_form(
-            step_id="user",
-            data_schema=vol.Schema(
-                {
-                    vol.Required("IP Address"): str,
-                }
-            ),
-        )
+
+        return await self.async_step_link(user_input)
 
     async def async_step_link(
         self,
